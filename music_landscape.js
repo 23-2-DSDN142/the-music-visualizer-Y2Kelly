@@ -49,7 +49,7 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
   }
   last_words = words;
 
-  textFont('Georgia');
+  textFont('comic_sans');
   textAlign(CENTER);
   textStyle(BOLD);
   textSize(80);
