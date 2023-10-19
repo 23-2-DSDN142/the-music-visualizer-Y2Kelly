@@ -8,8 +8,6 @@ let loadTVHEAD2_frame = true
    let TVHEADy = 100
    let img;
 
-
-
  function draw_one_frame(words, vocal, drum, bass, other, counter) {
    
    background(10, 10, 10);
@@ -20,8 +18,6 @@ var drumhight = map(drum, 0, 90, 178, 0+ballSize/3);
 fill(240, 239, 239);
 ellipse(width/2, otherhight, ballSize);
 ellipse(width/9, drumhight*9, ballSize);
-
-
 
    function preload() {
       TVHEAD_1 = loadimage('elevator.png');
@@ -34,14 +30,10 @@ ellipse(width/9, drumhight*9, ballSize);
          TVHEAD.push(loadImage('TVHEAD_1'));
          TVHEAD.push(loadImage('TVHEAD2_frame.png'));
          TVHEAD.push(loadImage('TVHEAD2_frame2.png'));
-         
-   
-         firstrun = false
+            
+        firstrun = false
       }
       background(200);
-      
-   
-   
 
       var VocalFrame = int(map(vocal, 0, 100, 0, 2));
       console.log(VocalFrame);
@@ -90,27 +82,6 @@ ellipse(width/9, drumhight*9, ballSize);
    }
    scale(1.5); //change image size
    image(testImg, 2, drum+400);
-//   textFont('Comic_Sans'); // please use CSS safe fonts
-//   rectMode(CENTER)
-//   textSize(24);
-//   var Ballsize = 40
-//    let bar_spacing = height / 1000;
-//    let bar_height = width / 1200;
-//    let bar_pos_x = width / 2000;
-  
-  // let value = 25;
-   //let EllipseSize = map(drum, 0, 100, 70, 200, Ballsize/4); //(value, start1, stop1, start2, stop2, [withinBounds])
-   // let firstrun = true
-   // let testImg;
-   //function draw_one_frame(vocal, drum, bass, other) {
-      // {
-      //    // display "words"
-      //    textAlign(CENTER);
-      //    textSize(vocal);
-      //    fill(255, 255);
-      //    text(words, width/2, height/3, +100, +90);
-      // }
-
       if(firstrun){
          TVHEAD = loadImage('TVHEAD2_frame.png');
          //rectMode(CENTER);
@@ -137,21 +108,6 @@ ellipse(width/9, drumhight*9, ballSize);
 
    scale(0.3);
    image(TVHEAD2_frame, 1000,drum+1000)
- 
-   // fill(217, 183, 91);
-   // nostroke();
-   // rect(0, 2000, 3000, 750)
-
-   //function draw_one_frame(vocal, drum, bass, other) {
-   // if (firstrun){
-
-   //    TVHEAD.push(loadImage('TVHEAD_0.png'));
-   //    TVHEAD.push(loadImage('TVHEAD_1'));
-   //    TVHEAD.push(loadImage('TVHEAD2_frame.png'));
-   //    TVHEAD.push(loadImage('TVHEAD2_frame2.png'));
-
-   //    firstrun = false
-   // }
    
    let VocalFrame = int(map(bass, 0, 100, 0, 6));
    push();
